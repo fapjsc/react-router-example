@@ -1,8 +1,10 @@
 import classes from './MainNavigation.module.css';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const MainNavigation = () => {
+  const location = useLocation();
+
   return (
     <header className={classes.header}>
       <div className={classes.logo}>Great Quotes</div>
